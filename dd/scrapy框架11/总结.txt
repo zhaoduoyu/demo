@@ -1,0 +1,44 @@
+关于appium爬虫使用以及部署
+	https://github.com/butomo1989/docker-android
+	https://zhuanlan.zhihu.com/appium
+mysql底层
+	https://blog.csdn.net/gitchat/article/details/78787837
+
+
+
+1. scrapy_redis作用：断点续爬 分布式
+2. scrapy_redis原理：持久化请求队列和指纹集合
+3. request的指纹的生成
+	1. hashlib.sha1()
+	2. method 排序后的url 排序后的请求体or''
+4. request进入请求队列的条件
+	1. 指纹不在集合中
+	2. request.dont_filter == True
+
+5. scrapy_redis代码实现
+	1. 完成scrapy.Spider或scrapy.spiders.CrawlSpider爬虫
+	2. 在settings.py中设置scrapy_redis的配置
+		生成指纹的去重类
+		调度器类
+		是否持久化请求队列和指纹集合
+		使用scrapy_redis的数据管道
+		指定共用的redis的url
+	3. 更改爬虫的继承类为
+		scrapy_redis.spider.RedisSpider
+		scrapy_redis.spider.RedisCrawlSpider
+	4. 把start_urls换成redis_key
+	5. 上传代码
+	6. 分别 scrapy crawl 爬虫名
+	7. 共用的redis中向redis_key中push起始的url
+	8. scrapy_redis的两个类爬虫不能自动停止
+
+6. scrapy_splash组件
+	scrapy_splash组件利用splash服务自动加载渲染js代码
+	docker镜像名：scrapinghub/splash
+	docekr run -d -p 8050:8050 scrapinghub/splash
+	在settings.py中配置scrapy_splash的设置
+		指定指纹去重类
+		指定三个相关的中间件
+		指定使用splash的http缓存功能
+		指定splash服务的ip端口
+	在爬虫中使用scrapy_splash.SplashRequest类来构造请求对象

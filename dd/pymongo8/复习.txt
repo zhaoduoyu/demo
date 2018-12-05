@@ -1,0 +1,57 @@
+1. mongodb服务启动
+	sudo mongod --auth
+				--fork
+				--logpath=
+				--logappend
+				--dbpath=
+
+2. 权限认证
+	use admin
+	db.createUser({'user':'账号', 'pwd':'密码', 'roles':['root']})
+	db.createUser({'user':'账号',
+				   'pwd':'密码', 
+				   'roles': [{'role':'read', 'db':'db_name'},
+				   			 {'role':'readWrite', 'db':'db_name2'}]})
+
+3. mongodb常用的数据库集合命令
+	show dbs 
+	use db_name
+	show collections 
+	db
+	db.dropDatabase()
+	db.集合名.drop()
+
+4. 增删改
+	db.集合名.insert({文档})
+	db.集合名.save({_id}) # 根据_id存在就覆盖，不存在就插入
+	db.集合名.update({条件},
+					 {$set:{指定更新的kv}},
+					 {multi: false/true}) # 默认false表示更新一条
+	db.集合名.remove({条件}, {justOne:false/true}) # true表示删除一条
+
+
+5. 查
+	db.集合名.findOne({条件})
+	db.集合名.find({条件}, {_id:0, k1:1}).count()
+										 .skip(1).limit(1)
+
+6. 聚合操作
+	db.集合名.aggregate([
+		{$mathc:{age:{$gt:5}}},
+		{$group:{_id:'$age', new_age:'$age', count:{$sum:1}}},
+		{$project:{_id:0, new_age:1, count:1}},
+		{$skip:2},
+		{$limit:1}
+	])
+
+7. 索引
+	db.集合名.getIndexes() 
+	db.集合名.dropIndex({'k':1})
+	db.集合名.ensureIndex({'k':1, 'k2':-1}, {unique:true})
+	# {unique:true}表示唯一索引
+	# 唯一索引：当插入数据时，检查唯一索引key的值是否重复，如果重复就不能写入数据；可以用来对数据去重
+	# 索引：加快根据索引key查询的速度，降低写入速度；读写分离；没用的索引要删除
+
+8. 备份恢复、导出导入
+	备份恢复：数据库-->文件夹
+	导出导入：数据集合-->文件（json/csv）

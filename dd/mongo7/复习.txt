@@ -1,0 +1,27 @@
+1. 常见的反爬手段及应对
+	a. headers
+		User-Agent
+		Referfer
+		Cookie
+	b. 代理ip
+	c. 验证码
+		第三方打码
+		机器学习
+	d. 换移动端的接口去抓取
+	e. js加密
+		python重写实现
+		js2py模块
+		selenium
+
+2. js2py模块
+	# 能够传入并执行js代码，传入或取出变量，调用js代码中的函数
+	import js2py
+	context = js2py.EvalJs() # 实例化js执行环境
+	# 传入并执行js代码
+	context.execute(js_str)
+	# 传入变量
+	context.变量名 = python变量名
+	# 取出变量值
+	python变量名 = context.变量名
+	# 调用js_str中js函数并返回结果
+	ret = context.函数名(参数)

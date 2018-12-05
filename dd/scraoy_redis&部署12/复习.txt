@@ -1,0 +1,55 @@
+1.  scrapy_redis能够实现 断点续爬 分布式
+	因为利用共用的redis持久化了 请求队列 和请求的 指纹集合
+
+2.  请求进入队列的条件
+	a. request.dont_filter == True
+	b. request.fp not in fp_set
+
+3. request.fp指纹的生成
+	1. hashlib.sha1()
+	2. url method post_data
+
+4. 爬虫分类：
+	通用爬虫：搜索引擎
+	聚焦爬虫：针对特定网站
+		功能性爬虫：不以获取数据为目的的爬虫
+			登陆点赞
+		增量爬虫
+			基于url的增量：url地址变化，内容也变化
+			基于内容的增量：url不变内容变化
+
+5. scrapy_redis实现增量爬虫
+	1. 完成scrapy.Spider或scrapy.spiders.CrawlSpider类爬虫代码
+	2. 更改继承类为scrapy_redis.spiders.RedisSpider或scrapy_redis.spiders.RedisCrawlSpider
+	3. 用redis_key代替start_urls
+		# scrapy crawl 爬虫名 
+		# lpush redis_key 'start_urls' '...'
+	4. settings.py中开启scrapy_redis的相关配置
+		REDIS_URL
+		DUPEFILTER_CLASS 指纹去重类
+		SCHEDULER 调度器类
+		SCHEDULER_PERSIST = True
+		ITEM_PIPELINES = {
+			'scrapy_redis.pipelines.RedisPipeline': 400
+		}
+
+6. scrapy_redis爬虫类和scrapy爬虫类对比
+	scrapy.Spider
+	scrapy.spiders.CrawlSpider
+		# scrapy.Spider有parse函数
+		# scrapy.spiders.CrawlSpider有rules
+	scrapy_redis.spiders.RedisSpider
+	scrapy_redis.spiders.RedisCrawlSpider
+		# redis_key替代了start_urls
+	# scrapy.Spider和scrapy.spiders.CrawlSpider类爬虫 在请求队列为空时，进程结束
+	# scrapy_redis的俩个类爬虫在请求队列为空时，不会结束
+	# settings中配置的区别：多了scrapy_redis的相关配置
+
+7. scrapy_splash组件
+	利用Splash服务像浏览器一样加载页面，返回渲染之后的响应对象
+	对于需要渲染的响应对象，构造请求对象时就要使用scrapy_splash.SplashRequest类来构造
+	开启splash组件的相关配置
+		DUPEFILTER_CLASS
+		DOWNLOADER_MIDDLEWARES (3个)
+		HTTPCACHE_STORAGE # 使用splash服务的http缓存
+		SPLASH_URL

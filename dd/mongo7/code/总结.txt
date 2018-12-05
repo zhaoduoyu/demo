@@ -1,0 +1,64 @@
+1. mongod启动
+	sudo mongod --auth
+				--dbpath=
+				--fork
+				--logpath=
+				--logappend
+
+2. 权限管理
+	use admin
+	db.createUser({'user':'账号', 'pwd':'密码', 'roles':['root']})
+
+	db.createUser({'user':'账号', 'pwd':'密码', 'roles':[{'role':'read', 'db':'数据库名'}, 
+			 {;role;:'readWrite', 'db':'另外一个数据库名'}]})
+
+3. 命令
+	show dbs
+	use db_name
+	show collections
+	db
+	db.dropDatabase()
+
+4. 增删改
+	db.集合名.insert({})
+	db.集合名.save({_id})
+	db.集合名.update({条件}, {$set:{指定Kv}}, {multi:false/true})
+		# multi默认false表示更新一个
+	db.集合名.remove({条件}, {justOne:false/true})
+
+5. 查
+	db.集合名.find().pretty()
+					.count()
+					.skip(1)
+					.limit(1)
+	db.集合名.find({条件}, {_id:0, k:1})
+
+6. 聚合操作
+	对于一次查询的结果集，要做多次的处理
+	db.集合名.aggregate(
+		{$match:{age:{$gte:15}}}，
+			# 匹配age大于等于15
+		{$group:{_id:'$key', xxx:{$sum:1}}}, 
+			# 按照key值进行分组，并自定义xxx字段，值是每组的数据总数
+		{$project:{_id:0, xxx:1}},
+			# 投影，只展示xxx字段和值
+		{$skip:1}, 
+		{$limit:1}
+			# 跳过第一条结果，只展示第二条结果
+		}
+	)
+
+7. 索引
+	# 能够对建立索引的字段查询速度加快
+	# 唯一索引可以对建立索引的字段进行去重
+	# 降低写入速度；清除没有作用的索引
+	db.集合名.ensureIndex({k1:1, k2:-1}, {'unique':true}) 
+	# 1表升序，-1表降序
+	# {'unique':true}声明唯一索引
+	db.集合名.getIndexes() 
+	db.集合名.dropIndex({key:1})
+
+8. 备份恢复导入导出
+	备份恢复：数据库<-->文件夹
+	导入导出：集合<-->文件
+

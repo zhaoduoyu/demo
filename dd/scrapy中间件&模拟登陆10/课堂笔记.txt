@@ -1,0 +1,56 @@
+1. scrapy中间件
+	# 预处理request、response
+		# 替换userAgent
+		# 使用代理ip
+		# 替换cookies
+		# 对响应进行检测
+	# 根据逻辑位置不同分类
+		# 下载中间件
+		# 爬虫中间件
+	# 中间件的方法
+		# process_request(self, request, spider)
+			# request经过中间件时被调用
+			# 正常情况不写return，request才能够按照正常流程继续传递
+		# process_response(self, request, response, spider)
+			# response经过中间件时被调用
+			# 必须return response
+		# 以上俩个函数return request，将不再经过其他权重较低的中间件，直接走引擎--调度器进入请求队列
+			request.dont_filter = True
+			return request
+		# 以上俩个函数return response，最终response都进入爬虫
+	# 也要在settings.py中设置开启中间件
+		# 左位置，有权重
+		# 权重值较小，越优先执行
+	process_item, return item
+	process_request, return None
+	process_response, return response
+		return request-->引擎-->调度器-->进入请求队列
+		return response--...-->爬虫解析
+
+2. 随机User-Agent
+	# 获取一个随机的User-Agent
+	# 在中间件process_request函数中给request添加User-Agent
+	def process_request(request, spider):
+		request.headers['User-Agent'] = 随机的ua
+		# 不写return
+
+3. 使用代理ip
+	request.meta['proxy'] = 'http://192.168.1.1:9527'
+
+4. selenium和scrapy配合使用
+	# 利用selenium解决js加密以及登陆，最终返回有效的cookies_dict
+	# 再给scrapy中的request对象的cookies参数赋值
+	# scrapy中可以完整的展示selenium服务的日志信息
+
+5. crawlspider爬虫类
+	scrapy genspider -t crawl tencent hr.tencent.com
+	# Rule规则中callback指定的函数之间不能传递数据
+	# 除了以上一点以外，crawlspider爬虫类的解析函数中可以干的事情和scrapy.Spider爬虫的解析函数是一样
+
+6. scrapy_redis的作用
+	# 持久化请求队列和请求的指纹集合
+		断点续爬
+		分布式
+
+7. scrapy_redis的工作流程
+	scrapy_redis就在scrapy工作流程基础上，把请求队列和指纹集合放到共用的redis中，提取的数据也保存到共用那个redis中

@@ -1,0 +1,59 @@
+1. 在spider中构造请求对象
+	scrapy.Request(url,
+				   callback=回调函数,
+				   method='GET',
+				   body={post_data},
+				   headers={不能写cookie},
+				   cookies={cookies_dict},
+				   meta={向callback函数传递数据},
+				   dont_filter=False) # 默认过滤重复请求
+	# 专门发送post请求
+	scrapy.FormRequest(url,
+					   # 没有method、body参数,
+					   formdata={post_data},
+					   # 其他参数和Request都一样)
+
+2. meta属性的使用
+	response.meta = request.meta # 引擎中
+	在构造请求对象时：
+		scrapy.Request(url, 
+					   callback=func, 
+					   meta={'item':item}) # 传递item
+	在指定的解析函数func中：
+		item = response.meta['item'] # 取出传递的item
+
+3. items.py的BaseItem
+	# 提前定义字段，防止手误；对扩展组件支撑
+	在items.py中：
+		字段 = scrapy.Field()
+	在spider.py中：
+		from 项目名.items import BaseItem类
+		item = BaseItem类()
+		item['字段'] = ... # 实例化后像字典一样使用
+
+4. 起始url需要登陆后才能访问：
+	重写scrapy.Spider.start_requests函数
+	# scrapy.Spider.start_requests函数对起始url构造request并返回
+
+5.  scrapy能够自动传递cookies，做状态保持
+	scrapy能够自动发送跳转的请求
+
+6. pipelines.py管道
+	process_item(item, spider)
+		# spider中返回一个数据时，该函数被调用
+		# 该函数用来具体的处理或保存数据
+		# 一定return item，其他权重较低的管道类同名函数才能接收到数据item
+		# 参数spider就是触发process_item函数执行的那个爬虫类对象
+		# 可以利用spider.name来区分不同的爬虫，进而做不同的处理
+		# 管道类中必须有该函数
+	open_spider(spider):爬虫开始时仅执行一次
+	close_spider(spider):爬虫结束时仅执行一次
+
+	# 多爬虫共用一个管道
+	# 一个爬虫使用多个管道
+	# 如果process_item函数把item保存到mongodb中，return的item将携带mongodb中的_id字段
+
+	管道使用需要在settings.py中设置开启
+		# 左边是位置，右边是权重值(int)
+		# 权重值越小，权重就越高，越优先执行
+

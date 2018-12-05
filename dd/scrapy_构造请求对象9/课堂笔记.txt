@@ -1,0 +1,72 @@
+1. 构造request对象
+	scrapy.Request(url,callback)
+	# callback指定url对应响应的解析函数
+
+
+2. tencent招聘爬虫
+	https://hr.tencent.com/position.php
+	tr_list = //table[@class="tablelist"]//tr # [1:-1]
+	title = tr//a/text()
+	next_href = //a[text()="下一页"]/@href
+	last_href == javascript:;
+
+
+3. scrapy.Request的更多参数
+	scrapy.Request(url[,callback,method="GET",headers,
+					body,cookies,meta,dont_filter=False])
+
+4. meta参数的使用:数据在不同的解析函数中的传递
+	# meta是个dict
+	# 只能传递到callback指定的回调函数中，从response中取出
+	response.meta = request.meta
+
+5. BaseItem的使用
+	# 防止手误，对特定组件进行支撑
+	# 美化日志中数据的输出
+	在items.py中定义字段
+		字段 = scrapy.Field()
+	在爬虫.py中导入BaseItem类
+	实例化之后像字典一样使用
+
+6. 直接携带cookies发送请求
+	# scrapy.Spider.start_requests函数：
+		# 把起始url构造成request并返回
+	# 起始url就需要cookies才能获取：
+		# 需要重写start_requests函数
+		# 构造起始request时，使用cookies参数
+	# scrapy中cookie不能够放在headers中，在构造请求的时候有专门的cookies参数
+
+7. 构造request对象发送post请求
+	# 专门发送post请求
+	scrapy.FormRequest(url,
+					   # 没有method、body参数
+					   formdata={post_data}
+					   # 其他参数都一样)
+
+8.  其他：
+	scrapy能够自动发送跳转请求
+	scrapy能够自动处理cookie的传递，做状态保持
+		前提：要做正确的请求的逻辑顺序
+
+7. 管道的使用
+	process_item(self,item,spider)
+		# 管道类中必有函数
+		# spider中的解析函数返回一次item，该函数就会被调用一次
+		# spider参数就是返回item的那个爬虫类对象
+		if spider.name == 'itcast':
+			dosomething
+		elif spider.name == 'xxx':
+			dootherthing
+		# 必须 return item
+		# 其他权重较低的管道类的同名函数才能接收到item
+	open_spider(self, spider): 在爬虫开启的时候仅执行一次
+	close_spider(self, spider): 在爬虫关闭的时候仅执行一次
+
+	# 多个爬虫共用一个管道，通过参数spider的name属性来区别
+	# 一个爬虫使用多个管道
+	# 配置中 权重值越小,越优先执行
+	# item保存到mongodb，其他权重较低的管道类的process_item函数接收到的将是带有_id的数据
+
+8. 文件中要想展示中文的样子
+	打开文件指定encoding='utf-8'
+	写入json字符串时，json.dumps()加入ensure_ascii=False参数

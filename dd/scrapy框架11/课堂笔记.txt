@@ -1,0 +1,92 @@
+1. scrapy_redis的settings.py
+	DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+	SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+	SCHEDULER_PERSIST = True
+	ITEM_PIPELINES = {
+	    'scrapy_redis.pipelines.RedisPipeline': 400,
+	}
+	REDIS_URL = 'redis://127.0.0.1:6379'
+
+2. 增量式爬虫
+	基于url地址的增量式的爬虫
+	基于内容的增量式爬虫：url地址不变，内容发生改变
+
+3. scrapy_redis.pipelines.RedisPipeline
+	# self.server.rpush(key, data)
+	key % {'spider': spider.name}
+	'%(spider)s:items' % {'spider': spider.name}
+	'%s:items' % spider.name
+	'dmoz:items'
+
+4. scrapy_redis.dupefilter.RFPDupefilter
+	def request_seen(self, request):
+		fp = self.request_fingerprint(request)
+		added = self.server.sadd(self.key, fp)
+	    return added == 0
+	# 如果指纹在集合里，返回true
+	# 如果不在集合里，返回false
+
+	指纹的生成
+	    fp = hashlib.sha1()
+        fp.update(to_bytes(request.method))
+        fp.update(to_bytes(canonicalize_url(request.url)))
+        	# xx.cn/s?b=2&a=1
+        	# xx.cn/s?a=1&b=2
+        fp.update(request.body or b'')
+        	# {a:1, b:2}
+        	# {b:2, a:1}
+        指纹 = fp.hexdigest()
+
+5. scrapy_redis.scheduler.Scheduler
+	if not request.dont_filter and self.df.request_seen(request):
+		return
+	queue.push(request)
+
+	# 过滤 并且指纹在集合中 --> request不进入队列
+	# 过滤 并且指纹不在集合中 --> request进入队列
+	# 不过滤 --> request进入队列
+
+	请求对象进入队列的条件
+		a. request.fp not in fp_set
+			指纹不在集合中的请求对象入队
+		b. request.dont_filter == True
+			不过滤的请求对象一定入队
+
+6. scrapy_redis分布式爬虫特点
+	scrapy.Spider
+	scrapy.spiders.CrawlSpider
+
+	scrapy_redis.spiders.RedisSpider
+	scrapy_redis.spiders.RedisCrawlSpider
+		没有start_urls，被redis_key替代
+		爬虫启动的方式放生改变：
+			scrapy crawl 爬虫名
+			向redis_key中push起始的url
+
+7. scrapy_redis分布式爬虫实现
+	1. 正常写scrapy爬虫
+	2. 改settings.py配置
+	3. 修改继承类
+	4. 用redis_key替代start_urls
+	####代码上传服务器####
+	5. 启动之后额外需要向redis_key中push起始url
+
+8. scrapy_redis的俩个分布式类爬虫始终不会自动退出
+
+9. scrapy_splash组件
+	sudo docker pull scrapinghub/splash
+	sudo docker run -d -p 8050:8050 scrapinghub/splash
+	在settings.py中设置scrapy_splash的配置
+		# 渲染服务的url
+		SPLASH_URL = 'http://127.0.0.1:8050'
+		# 下载器中间件
+		DOWNLOADER_MIDDLEWARES = {
+		    'scrapy_splash.SplashCookiesMiddleware': 723,
+		    'scrapy_splash.SplashMiddleware': 725,
+		    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+		}
+		# 去重过滤器
+		DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+		# 使用Splash的Http缓存
+		HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
+	在spider爬虫构造request对象时使用scrapy_splash.SplashRequest类来构造！

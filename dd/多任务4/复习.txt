@@ -1,0 +1,55 @@
+1. 响应内容分类
+	结构化
+		json
+			json模块
+			jsonpath模块
+			re模块
+		xml
+			lxml(xpath)模块
+			re模块
+	非结构化
+		html
+			lxml(xpath)模块
+			re模块
+
+2. json模块
+	json.dumps # python数据类型-->jsonstr
+	json.loads # jsonstr-->python数据类型
+	json.dump # python数据类型 写入 类文件对象
+	json.load # 类文件对象 读取 python数据类型
+
+3. jsonpath模块
+	from jsonpath import jsonpath
+	jsonpath(python数据类型, '$..xx')
+	# 所有key是xx的值，list or False
+	# 批量获取指定key的值
+
+4. re模块
+	re.match # 从首字符严格匹配
+	re.search 
+	re.findall
+	re.sub
+	re.compile
+
+5. 原始字符串r
+	a = '\n' # 换行符
+	b = r'\n' # 仅表示\n不再是换行符
+
+6. xpath语法
+	//*[@id="xx"]/../a[last()]//text()
+		# id是xx的全部标签的父一级标签下的所有a标签中最后一个a下所有文本内容
+	/html/body//div[2]/./a[text()="xx"]/@href
+		# body中所有div中的第二个div下子一级所有a标签，且文本内容是xx的这个a标签的名为href的属性的值
+
+7. lxml模块
+	from lxml import etree
+	html_element = etree.HTML(html_str)
+	# new_html_str = etree.tostring(html_element)
+	div_list= html_element.xpath('//div')
+	for div in div_list:
+		div.xpath('.//a/text()')
+	# 如果定位的是一个标签对象，返回由可以继续xpath的element对象构成的list or []
+	# 如果定位的是某标签的属性值或文本内容，返回字符串构成的list or []
+	# 爬虫提取数据要以new_html_str为准，是因为lxml.etree.HTML()会对html_str修改
+
+	

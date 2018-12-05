@@ -1,0 +1,48 @@
+# 作业： 爬取lol贴吧前三页url对应的html，分别保存到本地
+
+
+1. requests发送get请求
+	requests.get(url,
+				 headers={},
+				 cookies={},
+				 timeout=3,
+				 verify=False,
+				 proxies={})
+
+2. 发送post请求
+	requests.post(url,
+				  data={},
+				  #其他参数和get请求一致！)
+
+3. requests.session()的使用
+	# session发送请求的方法和参数是跟requests.get/post一摸一样
+	# 能够自动处理cookies，达到状态保持的目的
+
+4. response响应对象常用属性
+	response.url
+	response.status_code
+	response.headers
+	response.request.headers
+	response.cookies # cookiejar
+	response.request._cookies 
+
+5. 响应的内容
+	response.text # str
+	response.content # bytes
+	response.content.decode(utf8)
+	# gbk gb2312 ascii iso-8859-1
+
+6. 代理ip的使用
+	requests.get(url, proxies={
+		'http': 'http://host:port'
+		'https': 'https://host:port'	
+	})
+
+7. retry装饰器和超时参数的配合使用
+	@retry(stop_max_attempt_number=3)
+	def func():
+		requests.get(url, timeout=3)
+
+8. 代理ip分类
+	根据匿名程度：透明 匿名 高匿
+	根据协议不同：http https socket

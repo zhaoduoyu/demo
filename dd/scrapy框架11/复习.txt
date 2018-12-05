@@ -1,0 +1,59 @@
+1. middlewares.py中间件
+	根据逻辑位置不同分为：
+		爬虫中间件
+		下载中间件
+	对request、response预处理
+		替换User-Agent
+			request.headers['User-Agent'] = 'ua_str'
+		替换Cookies
+			request.cookies = {}
+		使用代理ip
+			request.meta['proxy'] = 'https://host:port'
+		对响应结果检查
+	在settings.py中设置开启中间件
+		左边是位置，右边是权重值
+		权重值越小，越优先执行
+	process_request(request, spider)
+		# 当request经过中间件时，该函数被执行
+		# 不要写return：让request正常运转
+	process_response(request, response, spider)
+		# 当response经过中间件时，该函数被执行
+		# 要return response：让response正常运转
+	# return request --> 引擎 --> 调度器，入队
+	# return response --> ... --> 爬虫
+
+2. crawlspider爬虫类
+	scrapy genspider -t crawl 爬虫名 范围域名
+	继承scrapy.spiders.CrawlSpider类
+	不能写名为parse的函数，该函数用来实现rules部分功能
+	Rule规则对象中callback指定的解析函数之间不能传递数据
+	rules = (
+		Rule(LinkExtractor(规则参数))
+			# 按照规则参数提取url，构造request；发送请求获取响应
+
+		Rule(LinkExtractor(规则参数), callback='func')
+			# 按照规则参数提取url，构造request；发送请求获取响应
+			# 该响应作为参数进入callback指定的解析函数中进行解析
+
+		Rule(LinkExtractor(规则参数), follow=True)
+			# 按照规则参数提取url，构造request；发送请求获取响应
+			# 该响应会进入rules规则集合中被Rule规则对象提取处理
+
+		Rule(LinkExtractor(规则参数), callback='func', follow=True)
+			# 按照规则参数提取url，构造request；发送请求获取响应
+			# 该响应作为参数进入callback指定的解析函数中进行解析
+			# 同时，该响应进入rules规则集合中被Rule规则对象提取处理
+
+		# LinkExtractor链接提取器是必要参数
+			# allow：re匹配a标签href属性的值
+			# restrict_xpaths：xpath定位标签，标签范围内的url都会被提取
+			# deny allow_domains deny_domains restrict_css
+			# 被提取的url一定符合所有参数的规则
+	)
+
+3. scrapy_redis作用：断点续爬 分布式
+
+4. scrapy_redis工作流程
+	# 持久化了请求队列和指纹集合
+	在scrapy工作流程的基础上，使用了共用的redis来存放请求队列和请求指纹集合；还存放了数据
+

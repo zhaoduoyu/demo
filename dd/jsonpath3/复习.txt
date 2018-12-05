@@ -1,0 +1,52 @@
+1. requests模块发送请求
+	requests.get(url)
+	requests.post(url, data={})
+	requests.session().get(url)
+	requests.session().post(url, data={})
+	# 请求方法的参数
+		url
+		headers={}
+			cookies={}
+		data={} # post请求
+		# method
+
+		proxies={'http(s)': 'http(s)://host:port'}
+		timeout=3 # 发送请求之后最长等待时间 秒
+		verify=False # 忽略ssl安全认证
+
+2. response响应常用属性
+	url
+	status_code
+	headers
+	text / content
+
+	cookies
+	request .headers 
+			._cookies
+
+3. response的响应内容
+	response.text # str
+	response.content # bytes
+	response.content.decode()
+
+4. requests.session()的使用
+	# session对象发送请求时，会带上前一次的cookie，达到状态保持
+	# session发送请求的方法和requests.get/.post一样
+
+5. 代理ip分类
+	根据匿名程度分： 普通 匿名 高匿
+	根据协议不同分： http https socket
+
+6. 超时参数和retry模块的配合使用
+	from retrying import retry
+	@retry(stop_max_attempt_number=3) # 最大重试3次
+	def func():
+		requests.get(url, timeout=3) # 3秒
+
+7. cookiejar的转换
+	requests.utils.dict_from_cookiejar(cj)
+	requests.utils.cookiejar_from_dict(cd)
+
+8. verify=False表示忽略安全认证
+	requests.packages.urllib3.disable_warnings()
+	requests.get(url, verify=False)

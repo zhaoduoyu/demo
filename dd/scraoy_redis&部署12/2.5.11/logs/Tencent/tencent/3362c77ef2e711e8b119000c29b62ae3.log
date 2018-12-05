@@ -1,0 +1,1294 @@
+2018-11-28 16:25:46 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: Tencent)
+2018-11-28 16:25:46 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.7 |Anaconda, Inc.| (default, Oct 23 2018, 19:16:44) - [GCC 7.3.0], pyOpenSSL 18.0.0 (OpenSSL 1.1.1  11 Sep 2018), cryptography 2.4.1, Platform Linux-4.15.0-39-generic-x86_64-with-debian-buster-sid
+2018-11-28 16:25:46 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'Tencent', 'LOG_FILE': 'logs/Tencent/tencent/3362c77ef2e711e8b119000c29b62ae3.log', 'NEWSPIDER_MODULE': 'Tencent.spiders', 'SPIDER_MODULES': ['Tencent.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'}
+2018-11-28 16:25:46 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-28 16:25:46 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-28 16:25:46 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-28 16:25:46 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-11-28 16:25:46 [scrapy.core.engine] INFO: Spider opened
+2018-11-28 16:25:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-28 16:25:46 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-11-28 16:25:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php> (referer: None)
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php>
+{'title': '25663-泛互联网行业解决方案专家（北京）'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php>
+{'title': '29912-微视审核团队管理岗'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php>
+{'title': '29912-短视频社区高级后台开发工程师'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php>
+{'title': '29912-短视频社区后台开发工程师'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php>
+{'title': '22989-web前端开发(高级)工程师'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php>
+{'title': '23674-前端开发组组长'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php>
+{'title': '25663-泛文娱行业解决方案专家（北京）'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php>
+{'title': '25663-泛文娱行业解决方案专家（上海）'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php>
+{'title': '25663-泛互联网行业解决方案专家（深圳总部）'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php>
+{'title': '25663-泛互联网行业解决方案专家（上海）'}
+2018-11-28 16:25:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=10#a> (referer: https://hr.tencent.com/position.php)
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'title': '15618-手游关卡策划（上海）'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'title': '26381-政务业务高级前端工程师（北京）'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'title': 'PCG12-灯塔web前端高级开发工程师'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'title': '23674-接入平台组组长'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'title': '25663-泛文娱行业解决方案专家（深圳总部）'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'title': '22989-人工智能Web前端开发工程师（上海/深圳）'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'title': '22989-人工智能产品经理（上海/深圳）'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'title': '18428-高级质量管理工程师（深圳）'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'title': '18428-银行业务架构师'}
+2018-11-28 16:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=10>
+{'title': '27730-短视频创意策划（北京）'}
+2018-11-28 16:25:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=20#a> (referer: https://hr.tencent.com/position.php?&start=10)
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'title': 'TEG09-运营规划经理(深圳)'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'title': '25666-运营商销售经理（贵阳）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'title': '27192-互娱市场与用户研究经理（深圳）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'title': '22989-高级人工智能后台研发（上海/深圳）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'title': 'WXG01-微信客户端开发-小程序跨平台SDK'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'title': '29912-安全审核leader'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'title': '29912-内容运营leader （深圳总部）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'title': '29912-达人运营leader'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'title': '15581-欢乐游戏运营策划（深圳）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=20>
+{'title': '29925-腾讯视频电视剧整合营销项目经理'}
+2018-11-28 16:25:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=30#a> (referer: https://hr.tencent.com/position.php?&start=20)
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'title': 'TME-全民K歌iOS开发工程师（深圳）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'title': '25928-后台开发高级工程师'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'title': '19332-高级Web后台开发工程师(上海)'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'title': '29912-内容运营leader （北京）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'title': '25923-Python高级工程师'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'title': '25923-java高级工程师（深圳）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'title': '22989-腾讯云数据库项目经理（成都）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'title': '28603-137 微信支付政府合作业务开发架构师（深圳）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'title': '28603-113 高级形式化技术软件工程师（深圳）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=30>
+{'title': '25928-后台开发工程师'}
+2018-11-28 16:25:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=40#a> (referer: https://hr.tencent.com/position.php?&start=30)
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'title': '15571-FPS手游服务器开发工程师'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'title': '21090-社区运营经理（深圳）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'title': '21090-赛事经理（深圳）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'title': '21090-市场推广经理（深圳）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'title': '25923-研发效能提升产品策划（深圳）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'title': 'WXG02-116 微信后台测试开发工程师（广州）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'title': 'WXG02-116 微信后台测试开发工程师（广州）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'title': 'WXG02-116 微信VOIP测试开发工程师（深圳）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'title': '22088-体育赛事运营经理（北京）'}
+2018-11-28 16:25:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=40>
+{'title': '22088-体育赛事运营经理（北京）'}
+2018-11-28 16:25:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=50#a> (referer: https://hr.tencent.com/position.php?&start=40)
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'title': '20016-天美射击类手游高级测试工程师（深圳）'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'title': '21085-穿越火线社群运营'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'title': '22989-大数据前端开发工程师'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'title': '22989-大数据产品经理'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'title': '22989-大数据和人工智能高级开发工程师（北京）'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'title': 'TEG02-网络运营开发工程师'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'title': '27730-Yoo视频高级视觉设计师 （深圳）'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'title': '25663-泛互联网售中架构师（深圳总部）'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'title': '25663-泛互联网售中架构师（北京）'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=50>
+{'title': '25663-泛互联网售中架构师（上海）'}
+2018-11-28 16:25:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=60#a> (referer: https://hr.tencent.com/position.php?&start=50)
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'title': '29313-PCG财务分析经理（深圳）'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'title': '22989-大数据后台开发工程师'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'title': '29912-游戏内容运营经理'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'title': '21527-腾讯音乐财务管理（深圳）'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'title': '25663-泛互联网解决方案架构师（北京/上海/深圳）（深圳总部）'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'title': '25663-泛互联网解决方案架构师（北京/上海/深圳）（北京）'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'title': '25663-泛互联网解决方案架构师（北京/上海/深圳）（上海）'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'title': 'BOD-Company Secretarial Officer'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'title': '29499-腾讯影业业务管理经理'}
+2018-11-28 16:25:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=60>
+{'title': 'WXG08-113 微信推荐机器学习平台后台开发工程师（广州）'}
+2018-11-28 16:25:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=70#a> (referer: https://hr.tencent.com/position.php?&start=60)
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'title': '29912- 微视用户运营'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'title': '29912-游戏用户运营经理'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'title': '22989-边缘计算高级开发工程师'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'title': '22989-云计算后台开发工程师'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'title': '22989-云计算后台开发工程师'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'title': '29912-推荐算法工程师'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'title': '29912-后台架构工程师'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'title': '28600-211 微信支付服务商业务运营经理（深圳）'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'title': 'CSIG16-车联网项目经理（北京）'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=70>
+{'title': '22989-视频云后台开发'}
+2018-11-28 16:25:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=80#a> (referer: https://hr.tencent.com/position.php?&start=70)
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'title': '22989-腾讯云容器技术专家（北京）'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'title': '22989-计算产品中心Web前端高级工程师'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'title': '22989-物联网安全高级开发工程师'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'title': '25923-高级工具开发工程师'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'title': 'CSIG02-腾讯云行业方案架构师（北京/上海/深圳/成都）'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'title': '18402-MMO手游平台渠道运营'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'title': '20589-商务拓展（深圳总部）'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'title': 'TME-MOO音乐产品运营（深圳）'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'title': 'TME-Moo音乐内容专题编辑（深圳）'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=80>
+{'title': 'TME-Moo音乐视觉设计（深圳）'}
+2018-11-28 16:25:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=90#a> (referer: https://hr.tencent.com/position.php?&start=80)
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'title': 'TEG13-运营开发工程师（深圳）'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'title': '25923-CodeCC高级后台开发工程师'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'title': '26563-PC客户端开发工程师(深圳）'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'title': 'TME-Moo音乐系统测试工程师（深圳）'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'title': 'TME-Moo音乐视频运营编辑（深圳）'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'title': 'TME-Moo音乐交互设计（深圳）'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'title': '22989-腾讯云加速中心C++高级工程师（深圳）'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'title': '22989-PHP后台高级开发工程师（深圳）'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'title': '18796-Android客户端开发工程师'}
+2018-11-28 16:25:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=90>
+{'title': 'CSIG18-安全咨询'}
+2018-11-28 16:25:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=100#a> (referer: https://hr.tencent.com/position.php?&start=90)
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'title': 'TME-腾讯音乐音乐曲库运营（深圳）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'title': 'CSIG07-产品市场经理（深圳）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'title': 'TME-QQ音乐渠道运营经理（深圳）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'title': '15583-手游3D角色设计师（深圳）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'title': '15583-unity游戏开发工程师(深圳)'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'title': '22989-腾讯云加速中心PHP高级工程师（深圳）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'title': '21309-深圳市腾讯教育科技有限公司质检主管（武汉）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'title': '21309-深圳市腾讯教育科技有限公司IT运维专员（武汉）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'title': '21309-深圳市腾讯教育科技有限公司质检专员（武汉）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=100>
+{'title': '21309-深圳市腾讯教育科技有限公司客服主管（武汉）'}
+2018-11-28 16:25:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=110#a> (referer: https://hr.tencent.com/position.php?&start=100)
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=110>
+{'title': 'TME-腾讯音乐娱乐营销经理（深圳）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=110>
+{'title': '21309-深圳市腾讯教育科技有限公司师训专员(武汉）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=110>
+{'title': '21309-深圳市腾讯教育科技有限公司辅导老师(武汉）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=110>
+{'title': '21309-深圳市腾讯教育科技有限公司客服专员（武汉）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=110>
+{'title': '21309-深圳市腾讯教育科技有限公司选聘主管（武汉）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=110>
+{'title': '21309-深圳市腾讯教育科技有限公司行政专员（武汉）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=110>
+{'title': '21309-深圳市腾讯教育科技有限公司销售主管（武汉）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=110>
+{'title': '21309-深圳市腾讯教育科技有限公司课程顾问（武汉）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=110>
+{'title': '21309-深圳市腾讯教育科技有限公司师训主管（武汉）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=110>
+{'title': '25666-金融云业务拓展总监（深圳）'}
+2018-11-28 16:25:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=120#a> (referer: https://hr.tencent.com/position.php?&start=110)
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=120>
+{'title': '25666-金融云业务拓展总监（北京）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=120>
+{'title': 'CDG064-web前端开发工程师（上海）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=120>
+{'title': 'TME-全民K歌视频类新产品后台开发（深圳）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=120>
+{'title': '21309-深圳市腾讯教育科技有限公司销售总监（武汉）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=120>
+{'title': 'TEG15-web前端开发高级工程师（深圳）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=120>
+{'title': 'TME-腾讯音乐iOS开发工程师（深圳）（专场招聘会）（深圳）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=120>
+{'title': '22989-物联网边缘计算高级产品经理（深圳）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=120>
+{'title': '22989-物联网操作系统高级产品经理（深圳）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=120>
+{'title': '22086-体育产品后台开发（北京）'}
+2018-11-28 16:25:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=120>
+{'title': 'CSIG16-腾讯地图位置服务交互设计师招聘（北京）'}
+2018-11-28 16:25:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=130#a> (referer: https://hr.tencent.com/position.php?&start=120)
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=130>
+{'title': 'CSIG16-腾讯地图位置服务视觉设计师（北京）'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=130>
+{'title': 'TME-腾讯音乐测试开发工程师（深圳）（专场招聘会）（深圳）'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=130>
+{'title': 'TME-腾讯音乐Android开发工程师（深圳）（专场招聘会）'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=130>
+{'title': 'TME-腾讯音乐C++/GO后台开发工程师（深圳）（专场招聘会）'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=130>
+{'title': 'TEG15-智能运维算法高级工程师（深圳）'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=130>
+{'title': '15611-游戏后台开发工程师（深圳）'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=130>
+{'title': '29912-达人运营经理'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=130>
+{'title': 'WXG04-微信游戏平台产品策划（深圳）'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=130>
+{'title': '22090-web前端开发工程师'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=130>
+{'title': 'TME-腾讯音乐系统测试工程师（深圳）（专场招聘会）（深圳）'}
+2018-11-28 16:25:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=140#a> (referer: https://hr.tencent.com/position.php?&start=130)
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=140>
+{'title': 'TME-腾讯音乐web开发工程师（专场招聘会）（深圳）'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=140>
+{'title': '27730-Yoo视频APP后台开发工程师（深圳）'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=140>
+{'title': '15616-高级3D角色设计师'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=140>
+{'title': '15616-高级特效设计师'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=140>
+{'title': '15616-高级UI设计师'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=140>
+{'title': '15616-高级动画设计师'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=140>
+{'title': '15616-高级3D场景设计师'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=140>
+{'title': '22989-腾讯云品牌设计组-视觉设计师（深圳）'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=140>
+{'title': '22989-腾讯云品牌设计组-交互设计师（深圳）'}
+2018-11-28 16:25:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=140>
+{'title': '27730-Yoo视频前端开发开发工程师（深圳）'}
+2018-11-28 16:25:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=150#a> (referer: https://hr.tencent.com/position.php?&start=140)
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=150>
+{'title': '15616-高级原画设计师'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=150>
+{'title': '28603-111 微信支付营销业务分析师（深圳）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=150>
+{'title': '27553-腾讯音乐测试开发工程师（深圳）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=150>
+{'title': '23671-企鹅号内容合作运营经理-影视综行业（北京）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=150>
+{'title': '22989-视频云产品运营经理'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=150>
+{'title': '27730-Yoo视频商务拓展（娱乐方向）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=150>
+{'title': '21882-算法工程师（深圳）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=150>
+{'title': '16810-小说内容运营编辑'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=150>
+{'title': 'PCG03-腾讯新闻品牌传播经理（北京）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=150>
+{'title': 'PCG07-后台平台开发（深圳）'}
+2018-11-28 16:25:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=160#a> (referer: https://hr.tencent.com/position.php?&start=150)
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=160>
+{'title': '17467-社交高级品牌经理'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=160>
+{'title': '29923-高级视觉设计师'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=160>
+{'title': '29923-QQ交互设计师'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=160>
+{'title': '29923-动效视觉设计师'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=160>
+{'title': '19837-影视传播经理（北京）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=160>
+{'title': 'TEG11-搜索后台开发工程师（深圳）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=160>
+{'title': 'CSIG02-腾讯云行业交付架构师（深圳）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=160>
+{'title': 'CSIG02-智慧社区产品运营经理（深圳）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=160>
+{'title': 'ZSC-Senior Patent Counsel/Expert'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=160>
+{'title': 'PCG19-腾讯视频移动端产品经理（深圳）'}
+2018-11-28 16:25:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=170#a> (referer: https://hr.tencent.com/position.php?&start=160)
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=170>
+{'title': '22851-腾讯视频重点页面运营编辑（北京）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=170>
+{'title': '22851-腾讯视频-短视频运营'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=170>
+{'title': 'PCG07-后台平台开发（深圳）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=170>
+{'title': 'PCG10-搜索高级算法工程师-图像方向'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=170>
+{'title': '23671-企鹅号平台产品运营经理（合作产品方向）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=170>
+{'title': 'PCG05-高级内容安全数据分析工程师（北京）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=170>
+{'title': 'PCG19-腾讯视频社区产品经理（深圳）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=170>
+{'title': '15616-高级手游系统策划（上海）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=170>
+{'title': '23671-企鹅号内容产品运营经理（产品方向）'}
+2018-11-28 16:25:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=170>
+{'title': '23671-企鹅号内容产品运营经理（产品方向）'}
+2018-11-28 16:25:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=180#a> (referer: https://hr.tencent.com/position.php?&start=170)
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=180>
+{'title': '23671-企鹅号平台产品运营经理（合作产品方向）'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=180>
+{'title': '23671-企鹅号前端开发工程师（深圳）'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=180>
+{'title': '25927-高级测试开发工程师（深圳）'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=180>
+{'title': 'CS-腾讯公益项目新闻传播经理'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=180>
+{'title': '27730-Yoo视频商务拓展（动漫二次元品类）'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=180>
+{'title': 'TEG02-服务器运营高级工程师（深圳）'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=180>
+{'title': 'TEG02-运营流程开发工程师（深圳）'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=180>
+{'title': 'SH-政府事务经理'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=180>
+{'title': 'CSIG08-WiFi产品运营组长（广州）'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=180>
+{'title': '15570-新项目资深主美（深圳）'}
+2018-11-28 16:25:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=190#a> (referer: https://hr.tencent.com/position.php?&start=180)
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=190>
+{'title': '22989-专有云高级前端web开发工程师'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=190>
+{'title': '18432-微黄金产品运营经理'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=190>
+{'title': 'CSIG02-腾讯云营销产品经理（北京）'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=190>
+{'title': 'PCG10-QQ浏览器视频前端开发工程师'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=190>
+{'title': '19332-高级PHP开发工程师（上海）'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=190>
+{'title': '22090-天天快报-NLP工程师（北京）'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=190>
+{'title': '22090-天天快报-数据开发工程师（北京）'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=190>
+{'title': 'PCG14-二次元类产品运营（深圳）'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=190>
+{'title': '27092-商业化策略产品经理（深圳）'}
+2018-11-28 16:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=190>
+{'title': 'PCG14-商业化策略产品经理（深圳）'}
+2018-11-28 16:25:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=200#a> (referer: https://hr.tencent.com/position.php?&start=190)
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=200>
+{'title': '22851-腾讯视频电视剧运营岗位（天津）'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=200>
+{'title': '28481-医疗大数据产品经理（深圳）'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=200>
+{'title': '22090-应用平台组组长/副组长'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=200>
+{'title': '22090-接入后台组组长/副组长'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=200>
+{'title': '22086-腾讯体育产品经理（北京）'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=200>
+{'title': '22090-用户增长组长'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=200>
+{'title': 'TME-Moo音乐iOS开发工程师（深圳）'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=200>
+{'title': 'TME-Moo音乐后台开发工程师（深圳）'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=200>
+{'title': '22989-腾讯云块存储产品经理（深圳）'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=200>
+{'title': '22086-体育视频节目负责人'}
+2018-11-28 16:25:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=210#a> (referer: https://hr.tencent.com/position.php?&start=200)
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=210>
+{'title': '22090-推荐引擎开发工程师'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=210>
+{'title': 'CSIG17-高级质量管理工程师'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=210>
+{'title': '24548-艺人经纪商务经理'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=210>
+{'title': '29777-云市场高级后台开发工程师（深圳）'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=210>
+{'title': '29777-工业消费品高级产品经理（深圳）'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=210>
+{'title': 'TME-Moo音乐Android开发工程师（深圳）'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=210>
+{'title': 'CSIG16-综合管理部主管'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=210>
+{'title': 'CSIG16-综合管理专员'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=210>
+{'title': 'CSIG16-财务经理'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=210>
+{'title': 'TEG02-自研交换机测试高级工程师（深圳）'}
+2018-11-28 16:25:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=220#a> (referer: https://hr.tencent.com/position.php?&start=210)
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=220>
+{'title': 'CSIG16-数据质量工程师'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=220>
+{'title': 'CSIG16-数据质量专员'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=220>
+{'title': 'CS-“科学探索奖”项目经理'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=220>
+{'title': '23671-企鹅号区域内容运营（北京）'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=220>
+{'title': '23671-企鹅号区域生态运营（北京）'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=220>
+{'title': 'TEG06-企业内网安全产品经理（深圳）'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=220>
+{'title': '29315-培训经理'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=220>
+{'title': 'CSIG16-数据生产主管'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=220>
+{'title': 'CSIG16-数据生产工程师'}
+2018-11-28 16:25:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=220>
+{'title': 'CSIG16-数据生产专员'}
+2018-11-28 16:25:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=230#a> (referer: https://hr.tencent.com/position.php?&start=220)
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=230>
+{'title': 'CSIG16-数据质量主管'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=230>
+{'title': 'CSIG17-资深测试工程师（深圳）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=230>
+{'title': '29777-腾讯云生态产品运营经理 （深圳/北京/上海）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=230>
+{'title': '15571-资深3D角色设计师（深圳）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=230>
+{'title': '23674-新闻推荐算法高级工程师（北京）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=230>
+{'title': 'PCG07-社交平台Android开发工程师（深圳）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=230>
+{'title': 'PCG17-高级产品运营经理（深圳）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=230>
+{'title': '23671-众创空间区域运营经理（上海）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=230>
+{'title': '17759-腾讯视频数据分析师'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=230>
+{'title': 'TEG03-大数据开发工程师(深圳）'}
+2018-11-28 16:25:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=240#a> (referer: https://hr.tencent.com/position.php?&start=230)
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=240>
+{'title': 'TEG03-新零售产品经理（深圳）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=240>
+{'title': 'TEG03-算法专家（深圳）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=240>
+{'title': '23295-互娱PHP开发工程师（深圳）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=240>
+{'title': 'TEG05-后台系统开发工程师（深圳）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=240>
+{'title': '21528-商务拓展（古风、二次元方向）（北京）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=240>
+{'title': 'TME-QQ音乐BD运营经理（深圳）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=240>
+{'title': 'TME-QQ音乐商务运营经理（深圳）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=240>
+{'title': '23295-互娱社区后台开发工程师（深圳）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=240>
+{'title': '23671-投资孵化中心商业分析师（深圳）'}
+2018-11-28 16:25:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=240>
+{'title': '23671-双百计划投资公司市场运营经理（深圳）'}
+2018-11-28 16:25:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=250#a> (referer: https://hr.tencent.com/position.php?&start=240)
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=250>
+{'title': '16810-腾讯动漫产品策划经理（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=250>
+{'title': 'TEG02-JAVA开发工程师（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=250>
+{'title': '20503-AI产品经理'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=250>
+{'title': '21530-腾讯音乐企业文化经理（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=250>
+{'title': '28600-211 微信支付服务商产品运营经理（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=250>
+{'title': '23671-腾讯topic基金投资经理（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=250>
+{'title': 'PCG04-移动端测试开发工程师（成都）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=250>
+{'title': '29912-短视频项目经理'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=250>
+{'title': 'PCG10-QQ浏览器大资讯高级后台开发工程师（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=250>
+{'title': '20503-AI项目经理'}
+2018-11-28 16:25:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=260#a> (referer: https://hr.tencent.com/position.php?&start=250)
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=260>
+{'title': 'CSIG15-翻译君商务拓展（教育方向）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=260>
+{'title': '21528-MCN运营（北京）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=260>
+{'title': 'SA-腾讯社交广告Java开发工程师（上海）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=260>
+{'title': '28297-RPG手游-版本管理（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=260>
+{'title': 'TEG11-数据挖掘研究员(深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=260>
+{'title': 'S2-Java应用开发工程师（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=260>
+{'title': 'CSIG16-地图政企研发工程师'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=260>
+{'title': 'TEG06-C/C++高级后台开发工程师（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=260>
+{'title': '21557-Android音视频研发工程师'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=260>
+{'title': '27087-青腾汇高级社群运营负责人'}
+2018-11-28 16:25:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=270#a> (referer: https://hr.tencent.com/position.php?&start=260)
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=270>
+{'title': '25928-AI客户端开发工程师（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=270>
+{'title': '28966-游戏GUI视觉设计（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=270>
+{'title': 'S2-S系统财务管理（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=270>
+{'title': 'WXG02-117 微信安全客户端开发工程师（广州）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=270>
+{'title': '29777-金融云区块链高级研发工程师（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=270>
+{'title': 'CSIG02-腾讯云图像识别高级产品策划经理（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=270>
+{'title': 'CSIG02-腾讯云房地产行业高级运营经理（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=270>
+{'title': 'PCG07-UGC产品策划经理（深圳）'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=270>
+{'title': 'WXG09-321 高级商务经理'}
+2018-11-28 16:25:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=270>
+{'title': 'WXG01-117 微信iOS基础优化工程师'}
+2018-11-28 16:25:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=280#a> (referer: https://hr.tencent.com/position.php?&start=270)
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=280>
+{'title': '27730-短视频公关传播经理（北京）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=280>
+{'title': '29777-金融云区块链高级研发工程师（深圳）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=280>
+{'title': 'TME-QQ音乐活动运营（深圳）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=280>
+{'title': 'TME-QQ音乐收入增长运营（深圳）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=280>
+{'title': 'TME-QQ音乐KOL运营（深圳）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=280>
+{'title': 'TME-QQ音乐音频直播运营（深圳）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=280>
+{'title': 'TME-全民K歌商业中心后台研发工程师（深圳）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=280>
+{'title': 'TME-QQ音乐音频直播运营（深圳）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=280>
+{'title': '22989-腾讯云高级Web前端研发工程师'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=280>
+{'title': '27442-反舞弊调查经理（深圳）'}
+2018-11-28 16:25:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=290#a> (referer: https://hr.tencent.com/position.php?&start=280)
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=290>
+{'title': '24987-次世代游戏后台开发（上海）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=290>
+{'title': '25663-腾讯云云市场高级产品经理（深圳）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=290>
+{'title': 'TME-QQ音乐产品策划（深圳）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=290>
+{'title': 'TME-QQ音乐艺人关系BD（深圳）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=290>
+{'title': 'PCG19-腾讯视频平台产品策划（深圳）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=290>
+{'title': '19822-短视频制作人（北京）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=290>
+{'title': '20772-天际工作室制片人'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=290>
+{'title': '28605-113 微信支付国际化运营开发工程师（深圳）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=290>
+{'title': '23671-企鹅号高级数据产品经理（北京）'}
+2018-11-28 16:25:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=290>
+{'title': '15605-手游客户端开发（深圳）'}
+2018-11-28 16:25:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=300#a> (referer: https://hr.tencent.com/position.php?&start=290)
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=300>
+{'title': '16810-动漫平台Andriod开发工程师（深圳）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=300>
+{'title': '19822-短视频制作人'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=300>
+{'title': '15605-射击手游客户端开发（深圳）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=300>
+{'title': '29314-全资公司财务总监（北京）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=300>
+{'title': 'TEG02-交换机系统研发工程师（深圳）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=300>
+{'title': '15611-WarSong 3D场景美术设计（深圳）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=300>
+{'title': '15611-WarSong3D动作设计（深圳）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=300>
+{'title': '15611-WarSong 3D特效设计（深圳）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=300>
+{'title': '21309-推荐算法工程师（深圳）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=300>
+{'title': 'S2-应收管理专家'}
+2018-11-28 16:25:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=310#a> (referer: https://hr.tencent.com/position.php?&start=300)
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=310>
+{'title': 'CSIG16-平台数据工艺产品经理'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=310>
+{'title': '28600-212 微信支付商户和服务商平台产品经理（深圳）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=310>
+{'title': 'PCG15-用户增长产品经理（深圳）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=310>
+{'title': '15611-WarSong 3D角色美术设计（深圳）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=310>
+{'title': 'GY0-测试工程师（深圳）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=310>
+{'title': 'WXG02-122 微信智聆发音评测高级研究员（北京）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=310>
+{'title': '22851-腾讯视频时尚中心市场公关岗位（北京）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=310>
+{'title': '22851-腾讯视频时尚中心商务岗位'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=310>
+{'title': 'SA-腾讯社交广告web前端开发工程师（上海）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=310>
+{'title': 'PCG04-后台开发工程师'}
+2018-11-28 16:25:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=320#a> (referer: https://hr.tencent.com/position.php?&start=310)
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=320>
+{'title': '25668-腾讯云高级市场经理（深圳）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=320>
+{'title': '24548-授权商务合同专员'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=320>
+{'title': 'PCG07-社交平台iOS开发工程师（上海）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=320>
+{'title': '25663-腾讯金融云产品运营组长'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=320>
+{'title': '25663-腾讯金融业务中心保险行业总监'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=320>
+{'title': 'CSIG02-泛政府行业高级商业分析师（深圳）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=320>
+{'title': 'CSIG16-地图众包python研发工程师'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=320>
+{'title': 'CSIG16-审核平台后台开发工程师'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=320>
+{'title': 'WXG10-119 企业微信后台开发工程师（广州）'}
+2018-11-28 16:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=320>
+{'title': '25668-腾讯云市场推广总监（深圳）'}
+2018-11-28 16:26:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=330#a> (referer: https://hr.tencent.com/position.php?&start=320)
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=330>
+{'title': '21882-腾讯医典产品总监（深圳）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=330>
+{'title': '27730-Yoo视频高级交互设计师（深圳）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=330>
+{'title': '22989-物联网嵌入式高级开发工程师（深圳）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=330>
+{'title': '26832-海外招聘经理（深圳）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=330>
+{'title': '26832-渠道运营经理（深圳）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=330>
+{'title': 'CSIG16-道路数据融合算法高级工程师'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=330>
+{'title': 'WXG10-111 企业微信数据分析工程师（广州）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=330>
+{'title': '29303-大数据及人工智能专家（深圳）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=330>
+{'title': '22968-华东汽车广告策划（上海）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=330>
+{'title': 'WXG10-119 企业微信PC开发工程师（广州）'}
+2018-11-28 16:26:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=340#a> (referer: https://hr.tencent.com/position.php?&start=330)
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=340>
+{'title': '19837-影视发行项目经理（北京）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=340>
+{'title': '27554-腾讯音乐综艺自制市场推广经理（北京）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=340>
+{'title': 'WXG08-121 微信机器学习算法工程师（深圳）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=340>
+{'title': 'WXG08-121 微信推荐数据挖掘工程师PW（广州/深圳）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=340>
+{'title': 'WXG08-122 微信搜索算法工程师PW（广州）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=340>
+{'title': '22989-腾讯云官网流量运营经理（SEO方向）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=340>
+{'title': 'TEG05-高级网络安全工程师（深圳）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=340>
+{'title': 'TME-全民K歌渠道运营经理（深圳）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=340>
+{'title': '19837-电影区域发行经理（合肥）'}
+2018-11-28 16:26:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=340>
+{'title': '19837-电影区域发行经理（青岛）'}
+2018-11-28 16:26:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=350#a> (referer: https://hr.tencent.com/position.php?&start=340)
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=350>
+{'title': '19837-电影区域发行经理（广州）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=350>
+{'title': '19837-影视发行统筹（北京）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=350>
+{'title': '27092-应用宝游戏专区运营（深圳）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=350>
+{'title': '22968-华北消电IT策划广告策划（北京）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=350>
+{'title': 'GY0-VOOV Andriod开发工程师（深圳）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=350>
+{'title': '29303-大数据及人工智能高级研究员（深圳）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=350>
+{'title': '29303-大数据及人工智能组长/总监（深圳）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=350>
+{'title': '19837-电影区域发行经理（北京）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=350>
+{'title': '21309-在线教育Web前端开发高级工程师（深圳）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=350>
+{'title': '25924-营销平台测试工程师（深圳）'}
+2018-11-28 16:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=360#a> (referer: https://hr.tencent.com/position.php?&start=350)
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=360>
+{'title': '18428-金融云后台开发'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=360>
+{'title': 'TEG11-语音前端工程师（深圳）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=360>
+{'title': '28302-腾讯Start云游戏日本地区高级运营经理（深圳）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=360>
+{'title': '25924-运营开发工程师（上海）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=360>
+{'title': '28600-212 微信支付服务商运营经理（深圳）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=360>
+{'title': 'WXG03-113 小程序后台开发工程师（广州）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=360>
+{'title': 'PCG04-后台开发工程师（深圳）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=360>
+{'title': 'TEG11-数据挖掘工程师（深圳）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=360>
+{'title': 'BJ-办公规划高级经理'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=360>
+{'title': '22090-天天快报-推荐算法工程师（北京）'}
+2018-11-28 16:26:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=370#a> (referer: https://hr.tencent.com/position.php?&start=360)
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=370>
+{'title': 'WXG04-212 微信游戏产品策划（平台）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=370>
+{'title': 'CSIG15-腾讯叮当TVS后台开发高级工程师'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=370>
+{'title': '22851-腾讯视频明星粉丝运营（北京）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=370>
+{'title': '20589-海外PM(深圳)'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=370>
+{'title': 'PCG04-测试开发工程师（深圳）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=370>
+{'title': '25663-腾讯云交通行业架构师（北京/上海/深圳）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=370>
+{'title': '28604-212 微信支付数据风控策略产品经理（深圳）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=370>
+{'title': '28605-321 微信境外支付高级区域经理（荷兰）'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=370>
+{'title': 'GY0-高级数据分析工程师'}
+2018-11-28 16:26:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=370>
+{'title': '27730-Yoo视频App工具业务开发- IOS'}
+2018-11-28 16:26:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=380#a> (referer: https://hr.tencent.com/position.php?&start=370)
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=380>
+{'title': 'CDG-FIT-HRBP（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=380>
+{'title': 'PCG22-经营BI分析师（北京）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=380>
+{'title': '28601-211 微信支付到家业务产品运营经理（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=380>
+{'title': '28601-211微信支付手机厂商行业运营经理（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=380>
+{'title': '28604-212 微信支付C端应用产品经理（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=380>
+{'title': 'TEG15-腾讯金融数据库TDSQL高级DBA（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=380>
+{'title': 'TEG15-计费后台开发工程师（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=380>
+{'title': 'TME-QQ音乐数据产品高级经理（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=380>
+{'title': '25923-golang研发工程师（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=380>
+{'title': 'CSIG18-腾讯云安全后台开发工程师（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=390#a> (referer: https://hr.tencent.com/position.php?&start=380)
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=390>
+{'title': '29316-沟通传播文化专家（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=390>
+{'title': 'CSIG18-高级业务运维工程师（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=390>
+{'title': 'TEG15-计费系统后台测试工程师（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=390>
+{'title': 'TEG15-结算系统运维工程师（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=390>
+{'title': '28601-213 微信支付行业应用产品经理（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=390>
+{'title': '22989-腾讯云web前端高级工程师'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=390>
+{'title': '29316-腾讯全资子公司HR负责人（北京）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=390>
+{'title': '29316-培训经理（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=390>
+{'title': 'CDG-员工关系经理（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=390>
+{'title': '21882-医疗资讯产品中心-高级视觉设计师（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=400#a> (referer: https://hr.tencent.com/position.php?&start=390)
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=400>
+{'title': 'CSIG07-桌面安全产品部-设计中心-C++后台开发工程师（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=400>
+{'title': '21882-腾讯医典运营开发工程师（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=400>
+{'title': '21882-腾讯医典IOS开发工程师（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=400>
+{'title': '21882-腾讯医典Android开发工程师（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=400>
+{'title': 'PCG04-PCG研发部前端架构师（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=400>
+{'title': '18427-理财通后台开发工程师'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=400>
+{'title': '19332-企点高级产品运营经理（上海）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=400>
+{'title': 'TEG13-高级系统测试工程师（深圳）'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=400>
+{'title': 'SD9-手游客户端开发工程师(深圳)'}
+2018-11-28 16:26:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=400>
+{'title': 'GY0-Content Operation Manager (JOOX)'}
+2018-11-28 16:26:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=410#a> (referer: https://hr.tencent.com/position.php?&start=400)
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=410>
+{'title': '15605-一人之下手游动作策划（深圳）'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=410>
+{'title': 'GY0-Creative Producer'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=410>
+{'title': '15605-一人之下手游高级文学策划（深圳）'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=410>
+{'title': '15605-一人之下手游高级关卡策划（深圳）'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=410>
+{'title': '20772-企鹅影视IP版权商务经理（'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=410>
+{'title': '20772-企鹅影视电视剧文学策划'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=410>
+{'title': 'PCG17-QQ钱包客户端开发（深圳）'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=410>
+{'title': '22989-高级AI后台开发工程师（上海/深圳）'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=410>
+{'title': '22989-高级AI前端研发工程师（上海/深圳）'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=410>
+{'title': '22989-AI基础项目经理PM（上海/深圳）'}
+2018-11-28 16:26:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=420#a> (referer: https://hr.tencent.com/position.php?&start=410)
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=420>
+{'title': '22989-账号平台高级产品经理（深圳）'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=420>
+{'title': '28601-211 微信支付生活缴费产品经理（深圳）'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=420>
+{'title': 'TEG06-职场建设项目经理（深圳）'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=420>
+{'title': '22989-自然语言处理工程师'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=420>
+{'title': '22989-AI平台产品经理/架构师（上海/深圳）'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=420>
+{'title': '22989-机器学习/数据挖掘工程师（上海/深圳）'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=420>
+{'title': '22989-音频算法工程师（上海/深圳）'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=420>
+{'title': '19332-企点高级运营经理'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=420>
+{'title': 'GY0-后台测试开发工程'}
+2018-11-28 16:26:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=420>
+{'title': 'GY0-海外ToB业务产品经理'}
+2018-11-28 16:26:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=430#a> (referer: https://hr.tencent.com/position.php?&start=420)
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=430>
+{'title': '22989-计算机视觉工程师（上海/深圳）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=430>
+{'title': 'TEG09-高级业务运维工程师（深圳）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=430>
+{'title': '28603-113 微信支付智慧营销开发工程师（广州）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=430>
+{'title': '28966-品牌插画视觉设计师(深圳）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=430>
+{'title': 'TZ-Content Manager（Hongkong）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=430>
+{'title': 'TZ-Social Media Strategist'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=430>
+{'title': 'GY0-人工智能研究员'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=430>
+{'title': '18428-腾讯金融与支付创新业务高级工程师（c++及java）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=430>
+{'title': 'PCG09-QQ看点策略推荐高级产品经理'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=430>
+{'title': '22989-腾讯云计算产品前端开发工程师（深圳）'}
+2018-11-28 16:26:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=440#a> (referer: https://hr.tencent.com/position.php?&start=430)
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=440>
+{'title': 'WXG10-116 企业微信测试开发工程师（广州）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=440>
+{'title': '18428-银行业务系统开发（深圳）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=440>
+{'title': '28603-113 微信支付智慧营销开发工程师（深圳）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=440>
+{'title': '22989-云网络后台开发工程师（深圳）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=440>
+{'title': '21309-在线教育数据分析高级工程师（深圳）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=440>
+{'title': '29311-智慧产业市场部-用户研究与商业分析经理（深圳）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=440>
+{'title': 'WXG03-115 微信小程序社区前端工程师（广州）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=440>
+{'title': '23486-web前端工程师（北京）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=440>
+{'title': '27092-高级算法工程师（深圳）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=440>
+{'title': '27092-广告算法工程师（深圳）'}
+2018-11-28 16:26:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=450#a> (referer: https://hr.tencent.com/position.php?&start=440)
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=450>
+{'title': 'CSIG16-后台开发高级工程师（架构方向）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=450>
+{'title': 'TZ-Associate Director, Corporate Communication'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=450>
+{'title': '17759-腾讯视频数据分析运营经理（北京）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=450>
+{'title': '腾讯云解决方案架构师-容器服务（上海/北京/深圳/成都）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=450>
+{'title': '15616-手游客户端开发工程师（上海）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=450>
+{'title': '15616-高级手游系统策划（上海）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=450>
+{'title': '15616-高级场景原画设计师（上海）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=450>
+{'title': '25666-教育云商务拓展（上海）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=450>
+{'title': '22989-腾讯云计算机视觉后台开发工程师（深圳）'}
+2018-11-28 16:26:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=450>
+{'title': '22989-腾讯云数据库研发高级工程师(北京/深圳/成都)'}
+2018-11-28 16:26:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=460#a> (referer: https://hr.tencent.com/position.php?&start=450)
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=460>
+{'title': '22989-腾讯云数据库NOSQL研发高级工程师(深圳/成都)'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=460>
+{'title': '22989-腾讯云数据库NOSQL研发高级工程师(深圳/成都)'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=460>
+{'title': '15618-游戏客户端开发工程师（上海）'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=460>
+{'title': 'CSIG02-腾讯云解决方案架构师（昆明）'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=460>
+{'title': '26381-政务业务拓展经理（昆明）'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=460>
+{'title': 'PCG04-测试开发工程师（上海）'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=460>
+{'title': '22989-腾讯云数据库内核研发高级工程师(北京/深圳/成都)'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=460>
+{'title': '22989-腾讯云数据库内核研发高级工程师(北京/深圳/成都)'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=460>
+{'title': '22989-腾讯云数据库内核研发高级工程师(北京/深圳/成都)'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=460>
+{'title': '22989-腾讯云数据库研发高级工程师(北京/深圳/成都)'}
+2018-11-28 16:26:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=470#a> (referer: https://hr.tencent.com/position.php?&start=460)
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=470>
+{'title': '22989-腾讯云数据库研发高级工程师(北京/深圳/成都)'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=470>
+{'title': 'CSIG02-腾讯云智慧旅游高级运营经理（深圳/成都）'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=470>
+{'title': 'CSIG02-腾讯云建筑/房地产/物业行业高级产品策划（深圳）'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=470>
+{'title': 'CSIG02-腾讯云旅游行业高级产品策划经理（深圳）'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=470>
+{'title': 'CSIG02-腾讯云高级后台开发工程师（昆明）'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=470>
+{'title': '25663-泛互联网海外高级运营经理（深圳）'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=470>
+{'title': '25663-泛互联网生态高级运营经理（深圳）'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=470>
+{'title': '25663-泛互联网高级战略规划师（深圳）'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=470>
+{'title': '25663-腾讯云游戏行业高级运营经理(深圳)'}
+2018-11-28 16:26:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=470>
+{'title': '25663-视频行业高级运营经理(深圳)'}
+2018-11-28 16:26:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=480#a> (referer: https://hr.tencent.com/position.php?&start=470)
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=480>
+{'title': '25663-泛互联网行业高级项目经理（深圳）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=480>
+{'title': '22989-云网络后台开发工程师'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=480>
+{'title': 'WXG08-117 腾讯小微安卓应用开发（北京）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=480>
+{'title': 'PCG06-内容平台2B交互设计师（深圳）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=480>
+{'title': '28607-111 微信支付高级数据分析师（深圳）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=480>
+{'title': '25663-互联网高级行业运营经理（深圳/上海）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=480>
+{'title': 'HY5-互娱欧美商务经理（上海）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=480>
+{'title': 'CSIG18-云集群运维工程师（深圳）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=480>
+{'title': '21309-教育创新产品-产品运营专员（深圳）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=480>
+{'title': 'WXG08-117 腾讯小微iOS应用开发（北京）'}
+2018-11-28 16:26:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=490#a> (referer: https://hr.tencent.com/position.php?&start=480)
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=490>
+{'title': '29309-投资分析经理（深圳）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=490>
+{'title': '22989-腾讯云数据库高级Web前端开发（成都/深圳）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=490>
+{'title': '22989-腾讯云数据库高级Web前端开发（成都/深圳）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=490>
+{'title': 'TEG-组织发展主管（成都）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=490>
+{'title': '28605-137 微信支付国际化解决方案架构师'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=490>
+{'title': 'TEG02-Web前端开发工程师'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=490>
+{'title': 'RP-研发项目经理（深圳）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=490>
+{'title': '22989-腾讯云CDN专项高级技术支持工程师（深圳/北京）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=490>
+{'title': '27092-计算机视觉/图像识别工程师（深圳）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=490>
+{'title': 'WXG01-微信推荐产品经理（广州）'}
+2018-11-28 16:26:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=500#a> (referer: https://hr.tencent.com/position.php?&start=490)
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=500>
+{'title': '25578-医疗AI软件开发'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=500>
+{'title': '25664-政务云客户端产品策划经理'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=500>
+{'title': 'TZ-IR Access'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=500>
+{'title': '22989-腾讯云计费中心高级后台开发工程师'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=500>
+{'title': '22989-腾讯云服务产品高级web前端开发工程师'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=500>
+{'title': '22989-腾讯云服务产品高级运营开发工程师'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=500>
+{'title': '22989-腾讯云CDN专项高级技术支持工程师（深圳/北京）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=500>
+{'title': '13654-高级专家助理'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=500>
+{'title': '28601-117 微信支付智慧应用Android开发工程师（深圳）'}
+2018-11-28 16:26:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=500>
+{'title': '22989-腾讯云中间件高级后台开发工程师（深圳）'}
+2018-11-28 16:26:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=510#a> (referer: https://hr.tencent.com/position.php?&start=500)
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=510>
+{'title': 'CS-腾讯公益内容运营岗位'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=510>
+{'title': 'CS-腾讯基金会内容运营岗（腾讯基金会编制）'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=510>
+{'title': '15616-手游高级后台开发工程师（上海）'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=510>
+{'title': '22989-云数据库高级DBA'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=510>
+{'title': '22989-云数据库高级DBA'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=510>
+{'title': '27730-时尚中心内容运营'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=510>
+{'title': '22989-物联网产品策划经理（深圳）'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=510>
+{'title': 'PCG12-windows运维工程师（深圳）'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=510>
+{'title': 'CSIG17-AI测试开发高级工程师'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=510>
+{'title': 'CSIG18-腾讯云安全运营开发工程师（深圳）'}
+2018-11-28 16:26:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=520#a> (referer: https://hr.tencent.com/position.php?&start=510)
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=520>
+{'title': '24012-创新影游高级后台开发（深圳）'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=520>
+{'title': '22989-云数据库高级DBA'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=520>
+{'title': '22989-云数据库高级DBA'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=520>
+{'title': '21309-企鹅辅导高级产品策划经理（深圳）'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=520>
+{'title': '27562-创新品类手游运营策划（深圳）'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=520>
+{'title': 'CSIG18-腾讯云安全运营开发工程师（深圳）'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=520>
+{'title': 'CSIG17-车联网测试开发工程师'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=520>
+{'title': '22989-AI应用后台开发工程师（深圳）'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=520>
+{'title': 'SA-腾讯社交广告移动联盟商务（北京）'}
+2018-11-28 16:26:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=520>
+{'title': 'SD9-互娱高级后台开发工程师（深圳）'}
+2018-11-28 16:26:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=530#a> (referer: https://hr.tencent.com/position.php?&start=520)
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=530>
+{'title': '22989-高级网络运维工程师'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=530>
+{'title': 'WXG07-117 广州研发部Android研发工程师（广州）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=530>
+{'title': '25663-金融业务中心资管行业总监'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=530>
+{'title': 'PCG12-行业数据研发高级工程师'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=530>
+{'title': '25667-企点行业渠道销售经理（北京）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=530>
+{'title': '25667-企点行业渠道销售经理（上海）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=530>
+{'title': '22989-腾讯云容器技术专家（深圳、北京）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=530>
+{'title': '22989-运营产品中心web前端开发'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=530>
+{'title': '27554-腾讯音乐综艺自制市场推广经理（上海）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=530>
+{'title': '25923-Web前端高级工程师（深圳）'}
+2018-11-28 16:26:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=540#a> (referer: https://hr.tencent.com/position.php?&start=530)
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=540>
+{'title': '17759-腾讯视频移动游戏社区运营（北京）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=540>
+{'title': '15570-手游后台高级工程师'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=540>
+{'title': 'PCG04-WEB前端高级开发工程师（深圳）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=540>
+{'title': 'CSIG18-数据仓库工程师（深圳）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=540>
+{'title': '24491-游戏主策划（深圳）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=540>
+{'title': 'SA-腾讯社交广告DBA(深圳)'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=540>
+{'title': 'SA-腾讯社交广告数据产品经理（北京）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=540>
+{'title': '24987-3D角色美术（上海）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=540>
+{'title': '27554-腾讯音乐商务导演（上海）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=540>
+{'title': '23295-互娱iOS开发工程师（深圳）'}
+2018-11-28 16:26:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=550#a> (referer: https://hr.tencent.com/position.php?&start=540)
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=550>
+{'title': 'WXG08-113 微信朋友圈后台开发工程师（广州）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=550>
+{'title': '15605-火影忍者ACT手游3D动画设计'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=550>
+{'title': '15605-高级3D场景设计师(深圳)'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=550>
+{'title': '15605-火影忍者ACT手游特效设计（深圳）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=550>
+{'title': '24491-王者荣耀全球版-高级UI设计师'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=550>
+{'title': 'WXG04-122 微信游戏机器学习工程师'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=550>
+{'title': 'S2-WXG风险管理经理(深圳）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=550>
+{'title': 'WXG04-111 微信游戏数据分析工程师（深圳）'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=550>
+{'title': 'PCG07-QQ空间web前端工程师'}
+2018-11-28 16:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=550>
+{'title': '21882-医疗资讯产品中心-高级医学插画师（深圳）'}
+2018-11-28 16:26:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=560#a> (referer: https://hr.tencent.com/position.php?&start=550)
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=560>
+{'title': '21882-医疗资讯产品中心-医学美术编辑（深圳）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=560>
+{'title': 'TEG04-DevOps产品Java高级开发工程师（深圳）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=560>
+{'title': 'CSIG14-移动安全高级研究员（深圳）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=560>
+{'title': '23294-互娱后台开发工程师（深圳）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=560>
+{'title': '23295-互娱PHP开发工程师（深圳）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=560>
+{'title': 'TA-领导力行业研究（深圳）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=560>
+{'title': 'PCG07-小程序/WEB前端工程师（上海）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=560>
+{'title': '21557-Senior Researcher(Silicon Valley/Shenzhen/Beijing)'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=560>
+{'title': '22989-IoT OS高级产品经理（深圳/上海/北京）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=560>
+{'title': '22989-工业物联Paas平台高级产品经理（深圳/上海）'}
+2018-11-28 16:26:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=570#a> (referer: https://hr.tencent.com/position.php?&start=560)
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=570>
+{'title': '22989-物联微服务平台产品经理 （深圳/上海）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=570>
+{'title': '15579-游戏后台开发工程师（深圳）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=570>
+{'title': '25925-运营开发工程师（深圳）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=570>
+{'title': 'TME-音乐品质提升算法工程师（深圳）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=570>
+{'title': 'PCG05-后台开发高级工程师（深圳）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=570>
+{'title': '23874-游戏引进评估分析（日本市场方向）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=570>
+{'title': 'TEG07-PHP开发工程师（深圳）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=570>
+{'title': '22989-IoT安全高级产品经理（深圳/上海/北京）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=570>
+{'title': 'CSIG16-汽车和出行行业后台测试工程师（深圳）'}
+2018-11-28 16:26:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=570>
+{'title': 'CSIG16-汽车和出行行业高级iOS研发工程师（深圳）'}
+2018-11-28 16:26:09 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2018-11-28 16:26:09 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-11-28 16:26:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hr.tencent.com/position.php?&start=580#a> (referer: https://hr.tencent.com/position.php?&start=570)
+2018-11-28 16:26:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=580>
+{'title': 'CSIG16-汽车和出行行业APP测试工程师（深圳）'}
+2018-11-28 16:26:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=580>
+{'title': 'CSIG16-汽车和出行行业Java后台开发（深圳）'}
+2018-11-28 16:26:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=580>
+{'title': 'CSIG16-汽车和出行行业前端高级工程师（深圳）'}
+2018-11-28 16:26:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=580>
+{'title': '21528-品牌公关与传播（北京）'}
+2018-11-28 16:26:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=580>
+{'title': '25925-NLP高级工程师（深圳）'}
+2018-11-28 16:26:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=580>
+{'title': '23672-视频编辑实习生（北京）'}
+2018-11-28 16:26:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=580>
+{'title': '22989-iOS高级研发工程师'}
+2018-11-28 16:26:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=580>
+{'title': 'WXG08-121 微信小程序商业数据分析工程师（广州）'}
+2018-11-28 16:26:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=580>
+{'title': '22851-腾讯视频娱乐中心短视频项目经理'}
+2018-11-28 16:26:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hr.tencent.com/position.php?&start=580>
+{'title': '21527-腾讯音乐企业IT高级网络工程师（深圳）'}
+2018-11-28 16:26:10 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 24578,
+ 'downloader/request_count': 59,
+ 'downloader/request_method_count/GET': 59,
+ 'downloader/response_bytes': 240619,
+ 'downloader/response_count': 59,
+ 'downloader/response_status_count/200': 59,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 11, 28, 8, 26, 10, 48219),
+ 'item_scraped_count': 590,
+ 'log_count/DEBUG': 650,
+ 'log_count/INFO': 8,
+ 'memusage/max': 58249216,
+ 'memusage/startup': 58249216,
+ 'request_depth_max': 59,
+ 'response_received_count': 59,
+ 'scheduler/dequeued': 59,
+ 'scheduler/dequeued/memory': 59,
+ 'scheduler/enqueued': 60,
+ 'scheduler/enqueued/memory': 60,
+ 'start_time': datetime.datetime(2018, 11, 28, 8, 25, 46, 479918)}
+2018-11-28 16:26:10 [scrapy.core.engine] INFO: Spider closed (shutdown)

@@ -1,0 +1,48 @@
+1. scrapy构造请求对象
+	scrapy.Request(url,
+				   callback=,
+				   method='GET',
+				   body={}/str,
+				   headers={},
+				   cookies={},
+				   meta={},
+				   dont_filter=False)
+	scrapy.FormRequest(url,
+					   # 没有method、body参数,
+					   formdata={},
+					   # 其他参数和Request一致)
+
+2. meta属性的使用
+	response.meta = request.meta
+	在构造请求对象时，加入meta
+		Request(url,callback=func,meta={'item':item})
+	在callback指定的解析函数func中
+		item = response.meta.get('item', '')
+
+3. 起始url需要登陆后才能访问：重写scrapy.Spider.start_requests函数
+	def start_requests(self):
+		for url in self.start_urls:
+			yield scrapy.Request(url, 
+								 callback=self.parse,
+								 cookies={cookies_dict},
+								 dont_filter=True)
+
+4.  scrapy能够自动传递cookies，达到状态保持的目的
+
+5. pipelines.py管道的使用
+	# 处理保存item
+	# 需要在settings.py中设置开启管道类
+		# 左边是位置，右边是权重值
+		# 权重值越小，越优先执行
+	# 管道类中的方法
+		# 函数接收的spider参数是爬虫的类对象
+		# 可以利用spider.name来分别处理来源于不同爬虫的数据
+		process_item(item, spider)
+			# 管道类中必有process_item函数
+			# 必须要return item，其他权重较低的管道的同名函数才能够接收到item
+			# 管道1存入mongodb后return的item自动被添加了_id字段
+			# 爬虫每返回一个item就会执行一次process_item
+		open_spider(spider) # 爬虫开启时仅执行一次
+		close_spider(spider) # 爬虫关闭时仅执行一次
+	# 多个爬虫可以使用一个管道
+	# 一个爬虫可以使用多个管道

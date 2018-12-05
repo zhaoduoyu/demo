@@ -1,0 +1,51 @@
+
+1. 反爬手段和应对
+	通过通讯协议来反爬
+	通过用户行为来反爬
+
+	a. 请求头
+		User-Agent
+		Referer
+		Cookie等
+	b. 代理ip
+	c. 验证码
+		打码平台
+		截图识别
+		AI
+	d. 面包屑
+		用户访问顺序：url_1 url_2 url_3
+		爬虫访问顺序：模拟用户的访问顺序
+
+	e. js反爬
+		python重写js代码
+		js2py模块
+		selenium
+
+	f. 切换到移动版
+
+
+2. js2py模块的使用
+import js2py
+context = js2py.EvalJs() # 实例化js执行环境
+# 传入js代码，并加载执行
+context.execute(js_str)
+# 传入所需变量
+context.变量名 = py定义的变量名
+# 取出js运行后的某个变量的值
+ret = context.js中的变量名
+# 调用js中的函数
+ret = context.js中的函数名(args)
+
+
+
+# 拓展
+	pyv8模块
+		调用js中的v8引擎
+	js2py模块
+		用py实现js的解释器，加载执行js代码
+	execjs模块
+		把js代码翻译成py代码，再执行
+
+
+
+

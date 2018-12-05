@@ -1,0 +1,68 @@
+1. pymongo模块
+	from pymongo import MongoClient
+	# client = MongoClient()
+	uri = 'mongodb://账号:密码@127.0.0.1'
+	client = MongoClient(uri, port=27017)
+	col = client.数据库名.集合名
+	col.insert({}/[{}, ...])
+	col.find_one({条件})
+	col.find({})
+	col.delete_one({条件})	
+	col.delete_many({条件})
+	col.update({条件},
+			   {'$set':{指定的kv}},
+			   multi=False, # 默认False更新一条
+			   upsert=False) # 没有就插入，存在就更新
+
+2. scrapy简单使用
+	创建项目 scrapy startproject 项目名
+	在项目路径下 scrapy genspider 爬虫名 范围域名
+	在项目路径下 scrapy crawl 爬虫名
+
+3. spider.py爬虫
+	class Spider(scrapy.Spider):
+		name = 爬虫名
+		allowed_domains = ['范围域名', '可以是多个']
+		start_urls = ['起始的url', '可以多个', '不受域名范围的限制']
+		# scrapy.Spider类爬虫必须有名为parse的解析函数
+		def parse(self, response):
+			# 专门解析起始url对应的响应内容
+			yield item 
+			# {} BaseItem Request None
+
+4. 管道使用要在settings.py中开启设置
+
+5. scrapy提取数据的方法
+	response.xpath(xpath_str) # 类list
+	response.xpath(xpath_str).extract() # 字符串构成的list
+	response.xpath(xpath_str).extract_first() # list中第一个字符串
+
+6. response的常用属性
+	response.url
+	response.request.url
+	response.headers
+	response.request.headers
+	response.status
+	response.body
+
+7. scrapy的352
+	三个内置数据对象
+		request response {}/BaseItem
+	五大模块
+		spider
+		scheduler
+		downloader
+		pipeline
+		engine
+	两个中间件
+		爬虫中间件
+		下载器中间件
+
+8. scrapy的工作流程
+	a. spider中对起始url构造request 
+	b. request--爬虫中间件--引擎--调度器，requests入队
+	c. 调度器从队列中取出request--引擎--下载中间件--下载器，发送请求获取response
+	d. response--下载中间件--引擎--爬虫中间件--spider
+	e. spider解析response，提取url，构造request--重复b步骤
+	f. spider解析response，提取item--引擎--管道
+
